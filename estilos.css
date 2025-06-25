@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Wii Sans";
+  src: url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.eot");
+  src: url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.svg#Wii Sans")
+      format("svg");
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0074d9;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #005bb5;
+}
+.contenido-principal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: white;
+  max-width: 1350px; /* más ancho */
+  margin: auto;
+  border: 3px solid #0074d9;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-wii {
+  width: 300px;
+  height: auto;
+}
+
+.texto-wii {
+  flex: 1;
+  font-family: "Wii Sans";
+}
+
+.descripcion-wii {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0074d9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background-color: #005bb5;
+}
+
+.container {
+  display: flex;
+  max-width: 1350px;
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid #0074d9;
+  border-radius: 15px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto {
+  flex: 1;
+  padding: 30px;
+}
+
+.imagen {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: 500px;
+  border-left: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #2e7ecf;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+.color {
+  color: #2c35ad;
+}
+#presentacion {
+  background-color: #eef5fc; /* celeste claro tipo Wii */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#presentacion {
+  animation: fadeIn 1.2s ease-in-out;
+}
+.footer {
+  text-align: center;
+  color: #e0e0e0;
+  background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+}
+.vermas {
+  color: white;
+}

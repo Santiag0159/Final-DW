@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Wii Sans";
+  src: url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.eot");
+  src: url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/005acc3dbc79c9ae0eaa0f4f9887473f.svg#Wii Sans")
+      format("svg");
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0074d9;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #005bb5;
+}
+body {
+  background-color: #0066cc;
+}
+
+.container {
+  display: flex;
+  max-width: 1350px;
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 15px solid #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto {
+  flex: 1;
+  padding: 30px;
+}
+
+.imagen {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: 500px;
+  border-left: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #2e7ecf;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.intro {
+  font-family: "Wii Sans";
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.segmento {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.segmento > div {
+  flex: 1 1 45%;
+}
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.footer {
+  text-align: center;
+  color: #e0e0e0;
+  background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+}
+.vermas {
+  color: white;
+}
