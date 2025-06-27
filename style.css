@@ -1,185 +1,155 @@
-/* Estilos Generales de Body y Fuente */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Una fuente más moderna y limpia */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fuente */
   padding: 0;
   margin: 0;
-  background-color: #e9ecef; /* Fondo más claro y suave */
-  color: #343a40; /* Color de texto más oscuro y legible */
+  background-color: #e9ecef;
+  color: #343a40;
   min-height: 100vh;
-  display: flex; /* Usar flexbox para el diseño general */
-  flex-direction: column; /* Apilar encabezado, contenido principal y pie de página verticalmente */
+  display: flex;
+  flex-direction: column;
 }
-
-/* Barra de Navegación */
 .nave {
-  background-color: #212529; /* Barra de navegación más oscura y prominente */
-  padding: 15px 0; /* Más relleno vertical */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra más fuerte y suave */
-  position: sticky; /* Hacer que la navegación se pegue en la parte superior */
+  background-color: #212529;
+  padding: 15px 0; /* espacio vertical */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: sticky;
   top: 0;
-  z-index: 1000; /* Asegurar que permanezca encima de otro contenido */
+  z-index: 1000;
 }
-
 .nave ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* Centrar los elementos de navegación */
-  gap: 40px; /* Espaciar los elementos uniformemente */
+  justify-content: center;
+  gap: 40px; /* espacio entre elementos */
   margin: 0;
   padding: 0;
 }
-
 .nave a {
   text-decoration: none;
-  color: #f8f9fa; /* Texto más claro para contraste */
-  font-weight: 600; /* Ligeramente más negrita */
-  font-size: 1.1em;
-  padding: 5px 10px; /* Añadir relleno para el área clicable */
-  transition: color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
-  border-radius: 5px; /* Esquinas ligeramente redondeadas para el efecto hover */
+  color: #f8f9fa;
+  font-weight: 600; /* letra */
+  font-size: 1.1em; /* letra */
+  padding: 5px 10px; /* espacio clicable */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
 }
-
 .nave a:hover {
   color: #ffffff;
-  background-color: #495057; /* Cambio sutil de fondo al pasar el ratón */
+  background-color: #495057;
 }
-
-/* Sección del Encabezado */
 header {
-  background-color: #2c3e50; /* Un azul-gris profundo y rico */
+  background-color: #2c3e50;
   color: white;
-  padding: 60px 20px; /* Más relleno vertical para una sensación más grandiosa */
+  padding: 60px 20px; /* espacio */
   text-align: center;
-  margin-bottom: 30px; /* Espacio debajo del encabezado */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  margin-bottom: 30px; /* espacio */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-header h1 { /* Específico para h1 dentro del header */
-  font-size: 3em; /* Encabezado más grande y con más impacto */
-  margin-bottom: 15px; /* Más espacio debajo del título */
-  font-weight: 700; /* Más negrita para el título principal */
+header h1 {
+  font-size: 3em; /* letra */
+  margin-bottom: 15px; /* espacio */
+  font-weight: 700; /* letra */
 }
-
 header p {
-  font-size: 1.2em; /* Texto descriptivo más grande y fácil de leer */
-  opacity: 0.9; /* Ligeramente transparente para suavizarlo */
-  max-width: 600px; /* Limitar el ancho del párrafo para mejor legibilidad */
-  margin: 0 auto; /* Centrar el párrafo */
-  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+  font-size: 1.2em; /* letra */
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto; /* centrar */
+  line-height: 1.6; /* espacio entre líneas */
 }
-
-/* Estilo del Botón (general para la clase .boton) */
 .boton {
   display: inline-block;
-  background-color: #007bff; /* Un azul primario atractivo */
+  background-color: #007bff;
   color: white;
-  padding: 12px 25px; /* Más relleno para un botón más prominente */
-  border-radius: 8px; /* Bordes más redondeados pero no completamente circulares */
+  padding: 12px 25px; /* espacio */
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 600; /* Ligeramente más negrita */
-  font-size: 1em; /* Ajuste del tamaño de fuente */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Añadir transición de transformación */
-  border: none; /* Asegurarse de que no haya borde predeterminado */
-  cursor: pointer; /* Indicar que es clicable */
+  font-weight: 600; /* letra */
+  font-size: 1em; /* letra */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
 }
-
 .boton:hover {
-  background-color: #0056b3; /* Un azul más oscuro al pasar el ratón */
-  transform: translateY(-2px); /* Un sutil efecto de "levantamiento" */
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
-
-/* Contenido Principal (main) */
 main {
-  flex-grow: 1; /* Permitir que main ocupe el espacio restante */
-  max-width: 900px; /* Un poco más ancho para el contenido */
-  margin: 30px auto; /* Margen superior e inferior para espacio, centrado horizontalmente */
-  padding: 30px; /* Más relleno interno */
-  background-color: #fdfdfe; /* Fondo muy claro para el contenido principal */
-  border-radius: 12px; /* Bordes más redondeados */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 30px auto; /* espacio y centrado */
+  padding: 30px; /* espacio interno */
+  background-color: #fdfdfe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-
-/* Secciones de Logo (cada tarjeta de consola) */
 .logo {
-  background-color: #ffffff; /* Fondo blanco puro para las tarjetas */
-  border-radius: 15px; /* Bordes redondeados consistentes */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Sombra más sutil y limpia */
-  padding: 30px; /* Más relleno interno */
-  margin-bottom: 30px; /* Espacio uniforme entre las tarjetas */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px; /* espacio */
+  margin-bottom: 30px; /* espacio entre tarjetas */
   text-align: center;
-  display: flex; /* Usar flexbox para alinear contenido dentro de la tarjeta */
-  flex-direction: column; /* Apilar elementos verticalmente */
-  align-items: center; /* Centrar horizontalmente los elementos */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadir transiciones para hover */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .logo:hover {
-  transform: translateY(-5px); /* Efecto sutil de levantamiento al pasar el ratón */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra más intensa al pasar el ratón */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-
 .logo img {
-  max-width: 150px; /* Un poco más grandes los logos */
-  height: auto; /* Mantener la proporción */
-  margin-bottom: 20px; /* Más espacio debajo de la imagen */
-  border-radius: 10px; /* Ligeramente redondeado para las imágenes */
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px; /* espacio debajo de imagen */
+  border-radius: 10px;
 }
-
 .logo h2 {
-  margin-bottom: 15px; /* Espacio debajo del título H2 */
+  margin-bottom: 15px; /* espacio */
 }
-
 .logo h2 a {
-  color: #343a40; /* Color de texto consistente con el cuerpo */
+  color: #343a40;
   text-decoration: none;
-  font-size: 1.8em; /* Tamaño de fuente ligeramente más grande */
-  font-weight: 700; /* Más negrita para los títulos de las consolas */
+  font-size: 1.8em; /* letra */
+  font-weight: 700; /* letra */
 }
-
 .logo h2 a:hover {
-  color: #007bff; /* Color de hover que combine con el botón */
+  color: #007bff;
 }
-
 .logo p {
-  font-size: 1.1em; /* Texto descriptivo ligeramente más grande */
-  line-height: 1.5; /* Mejorar el interlineado para legibilidad */
-  color: #6c757d; /* Color de texto más suave */
-  margin-bottom: 20px; /* Espacio antes del botón */
+  font-size: 1.1em; /* letra */
+  line-height: 1.5; /* espacio entre líneas */
+  color: #6c757d;
+  margin-bottom: 20px; /* espacio */
 }
-
-/* Separador horizontal */
 hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
-  margin: 40px 0; /* Más espacio alrededor del separador */
+  margin: 40px 0; /* espacio */
 }
-
-/* Pie de Página */
 .footer {
   text-align: center;
-  color: #dee2e6; /* Color de texto más claro para el pie de página */
-  background-color: #212529; /* Color de fondo consistente con la navegación */
-  padding: 20px; /* Más relleno */
-  margin-top: auto; /* Empujar el pie de página hacia abajo */
-  border-radius: 0; /* Eliminar el border-radius para que sea de ancho completo */
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil en la parte superior */
+  color: #dee2e6;
+  background-color: #212529;
+  padding: 20px; /* espacio */
+  margin-top: auto;
+  border-radius: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
-
 .footer p {
-  margin: 0; /* Eliminar margen predeterminado del párrafo */
-  font-size: 0.95em; /* Tamaño de fuente ligeramente más pequeño */
-  line-height: 1.6; /* Mejorar el interlineado */
+  margin: 0;
+  font-size: 0.95em; /* letra */
+  line-height: 1.6; /* espacio entre líneas */
 }
-
 .vermas {
-  color: #007bff; /* Color azul para enlaces en el pie de página */
+  color: #007bff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 600; /* letra */
   transition: color 0.3s ease;
 }
-
 .vermas:hover {
-  color: #6bb3ff; /* Un azul más claro al pasar el ratón */
+  color: #6bb3ff;
   text-decoration: underline;
 }

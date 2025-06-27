@@ -57,7 +57,7 @@ body {
   gap: 2rem;
   padding: 2rem;
   background-color: white;
-  max-width: 1350px; /* más ancho */
+  max-width: 1350px; 
   margin: auto;
   border: 3px solid #0074d9;
   border-radius: 15px;
@@ -100,7 +100,6 @@ body {
   max-width: 1350px;
   margin: auto;
   background-color: white;
-  border-radius: 15px;
   overflow: hidden;
   border: 3px solid #0074d9;
   border-radius: 15px;
