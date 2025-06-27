@@ -46,14 +46,12 @@
             font-size: 48px;
             color: #3ab32b; 
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
-            margin-bottom: 30px;
             font-family: 'Segoe UI', sans-serif;
          }
 
          
          .generaciones{
-        display: flex;
+         display: flex;
          background-color: #ccc;
            }
 
